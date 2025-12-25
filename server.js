@@ -30,7 +30,7 @@ app.post("/create-item", function (req, res) {
 });
 
 app.get("/", (req, res) => { 
-    res.render("harid", { user: user });
+    res.render("author", { user: user });
 });
 
 const server = http.createServer(app);
