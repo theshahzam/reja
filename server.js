@@ -1,7 +1,18 @@
 console.log("Web Server boshlash");
 const express = require("express");
 const app = express();
-const http = require("http")
+const http = require("http");
+const fs = require("fs");
+
+let user;
+fs.readFile("database/user.json", "utf-8", (err, data) => {
+    if (err) {
+        console.log("Fayl o'qishda xatolik yuz berdi:", err);
+    } else {
+        user = JSON.parse(data);
+        console.log("Fayl muvaffaqiyatli o'qildi.");
+    }
+});
 //1 BEGIN
 app.use(express.static("public"));
 app.use(express.json());
@@ -18,8 +29,8 @@ app.post("/create-item", function (req, res) {
     res.json({test: "Success" });
 });
 
-app.get("/", function (req, res) { 
-    res.render("harid", { pageTitle: "Home" });
+app.get("/", (req, res) => { 
+    res.render("harid", { user: user });
 });
 
 const server = http.createServer(app);
