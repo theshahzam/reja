@@ -1,4 +1,3 @@
-console.log("Web Server boshlash");
 const express = require("express");
 const app = express();
 const http = require("http");
@@ -24,13 +23,22 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 //4 ROUTING
-app.post("/create-item", function (req, res) {
-    console.log(req.body);
-    res.json({test: "Success" });
+app.get("/", (req, res) => { 
+    res.redirect("/author");
 });
 
-app.get("/", (req, res) => { 
+app.get("/author", (req, res) => { 
     res.render("author", { user: user });
+});
+app.post("/create_item", (req, res) => {
+    //console.log(req.body);
+    //res.json({message: "success"});
+    //res.send("Ma'lumot qo'shildi");
+    //res.redirect("/");
+});
+
+app.get("/about", (req, res) => {
+    res.end("About page");
 });
 
 const server = http.createServer(app);
