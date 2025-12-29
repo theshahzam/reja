@@ -19,8 +19,8 @@ function counter(word, search) {
     return sanoq;
 }
 
-let asosiyQiymatniKiriting = "1B111";
-let qidiruvQiymatiniKiriting = "b";
+let asosiyQiymatniKiriting = "Banana";
+let qidiruvQiymatiniKiriting = "na";
 
 let umumiylikSoni = counter(asosiyQiymatniKiriting, qidiruvQiymatiniKiriting);
   if (umumiylikSoni === 0) {

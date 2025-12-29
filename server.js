@@ -23,26 +23,23 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 //4 ROUTING
+app.post("/create-item", (req, res) => {
+    console.log(req.body);
+    res.json({message: "success"});
+});
+
 app.get("/", (req, res) => { 
-    res.redirect("/author");
+    res.render("reja");
 });
 
 app.get("/author", (req, res) => { 
     res.render("author", { user: user });
 });
-app.post("/create_item", (req, res) => {
-    //console.log(req.body);
-    //res.json({message: "success"});
-    //res.send("Ma'lumot qo'shildi");
-    //res.redirect("/");
-});
-
-app.get("/about", (req, res) => {
-    res.end("About page");
-});
 
 const server = http.createServer(app);
 let PORT = 3000;
 server.listen(PORT, function () {
-    console.log(`The server is running successfully on port: ${PORT}`);
+    console.log(
+        `The server is running successfully on port: ${PORT}, http://localhost:${PORT}`
+    );
 });
