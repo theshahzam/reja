@@ -1,3 +1,25 @@
+//B TASK
+
+// 1-yechim
+/*
+const stringKiriting = "dhj88898hd9s00fh-0kj8u";
+
+const digitsArray = stringKiriting.match(/\d/g) || [];
+const count = digitsArray.length;
+
+console.log(`Stringda raqamlar soni ${count} dona`);
+console.log(`bular quyidagilar:${digitsArray}`);*/
+
+// 2-yechim
+/*
+let count = 0;
+const string = "dhj88898hdsfhkju"
+
+for (const ele of string) {
+    if(!isNaN(ele)) count++
+}
+    console.log(count);*/
+
 //A TASK:
 /*
 function counter(word, search) {
@@ -27,8 +49,8 @@ let umumiylikSoni = counter(asosiyQiymatniKiriting, qidiruvQiymatiniKiriting);
   console.log("Siz kiritgan qiymatlarda umumiylik mavjud emas")
 } else {
   console.log(`Siz kiritgan ${asosiyQiymatniKiriting} qiymatida ${qidiruvQiymatiniKiriting}, ${umumiylikSoni} dona mavjud`)
-};
-*/
+};*/
+
 // Video 1:
 /*
 console.log("Jek Ma maslahatlari")
@@ -62,8 +84,8 @@ maslahatBering(-10, (err, data) => {
         console.log("javob:", data)
     }
 });
-console.log("passed here 1")
-*/
+console.log("passed here 1")*/
+
 // Video 2:
 
 // async function
@@ -174,13 +196,3 @@ maslahatBering(75, (err, data) => {
 });
 console.log("passed here 1") 
 */
-
-console.log("Jek Ma maslahatlari")
-const list = [
-    "yaxshi talaba bo'ling.", // 0-20
-    "To'g'ri boshliq tanlang va ko'proq xato qiling.", //20-30
-    "O'zingizga ishlashni boshlang", //30-40
-    "Siz kuchli bo'lgan narsalarni qiling", //40-50
-    "Yoshlarga investitsiya qiling", //50-60
-    "Endi dam oling, foydasi yo'q", //60+
-];
