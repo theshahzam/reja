@@ -1,3 +1,72 @@
+//C TASK
+/*const moment = require("moment");
+class shop {
+    constructor(non, lagmon, cola) {
+        this.non = non;
+        this.lagmon = lagmon;
+        this.cola = cola
+    }
+
+    qoldiq() {
+        console.log(`Hozir ${moment().format('LTS')} da, ${this.non} ta non, ${this.lagmon} ta lag'mon va ${this.cola} dona Coca-Cola mavjud.`);
+    };
+
+    sotish(nomi, soni) {
+        switch (nomi) {
+            case "non":
+                if (this.non >= soni) this.non -= soni;
+                else { console.log("yetarli Non yo'q!"); }
+                break;
+            
+            case "lagmon":
+                if (this.lagmon >= soni) this.lagmon -= soni;
+                else { console.log("yetarli Lag'mon yo'q!"); }
+                break;
+            
+            case "cola":
+                if (this.cola >= soni) this.cola -= soni;
+                else { console.log("yetarli Coca-Cola yo'q!"); }
+                break;
+            
+            default:
+                console.log("Bunday mahsulot mavjud emas!");        
+        }
+
+        console.log(`${moment().format('LTS')}
+        da ${soni} ta ${nomi} sotildi!`);
+    };
+
+    qabul(nomi, soni) {
+        switch (nomi) {
+            case "non":
+                this.non += soni;
+                break;
+         
+            case "lagmon":
+                this.lagmon += soni;
+                break;
+         
+            case "cola":
+                this.cola += soni;
+                break;
+         
+            default:
+                console.log("Bunday mahsulot mavjud emas!");
+        }
+        console.log(`${moment().format('LTS')} da
+        ${soni} ta ${nomi} qabul qilindi!`);
+    };
+}
+const myShop = new shop();
+myShop.qoldiq();
+
+console.log('====================================');
+myShop.qabul();
+console.log('====================================');
+myShop.sotish()
+console.log('====================================');
+myShop.qoldiq();*/
+
 //B TASK
 
 // 1-yechim
@@ -9,7 +78,6 @@ const count = digitsArray.length;
 
 console.log(`Stringda raqamlar soni ${count} dona`);
 console.log(`bular quyidagilar:${digitsArray}`);*/
-
 // 2-yechim
 /*
 let count = 0;
@@ -18,9 +86,10 @@ const string = "dhj88898hdsfhkju"
 for (const ele of string) {
     if(!isNaN(ele)) count++
 }
-    console.log(count);*/
+console.log(count);*/
 
 //A TASK:
+
 /*
 function counter(word, search) {
     let sanoq = 0;
